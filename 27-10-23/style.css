@@ -1,0 +1,265 @@
+/****** Colors *****/
+/* Black  #000000 */
+/* Green  00FF00 */
+/* white font #ffffff
+/* ******* */
+
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Sometype+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Montserrat:wght@100&family=Sometype+Mono&display=swap");
+/* font-family: 'IBM Plex Mono', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Sometype Mono', monospace; */
+/* reset page */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Sometype Mono", monospace;
+}
+/* end reset page */
+
+/* global */
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding: left 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 20px, 40px;
+  width: 100px;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px, solid #ffffff;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transition: all 0.5s ease-in-out;
+  font-weight: bold;
+}
+/* end global */
+
+/* typography */
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 38px;
+}
+
+h4 {
+  font-size: 34px;
+}
+
+.display {
+  font-size: 60px;
+}
+/* end typography */
+
+/* Header */
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  background-color: #000000;
+}
+
+.header-wrapper {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.5s 0.5s linear;
+}
+
+.main-nav a:hover {
+  color: #00ff00;
+  text-decoration: none;
+}
+/* End Header */
+
+/* Hero */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: #00ff00;
+  font-family: "Sometype Mono", monospace;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  animation: qrcode 2s ease-in-out infinite alternate;
+}
+@keyframes qrcode {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+.hero-text {
+  width: 100%;
+  justify-content: center;
+}
+
+.here-introduction {
+  margin-top: 20px;
+  font-size: small;
+  width: 70%;
+}
+
+.hero-text span {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-text,
+  .hero-image {
+    width: 50%;
+  }
+}
+/* End Hero */
+
+/* Second Section */
+
+.second-section {
+  width: 100%;
+  height: 50vh;
+  font-family: "Sometype Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.second-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.second-text {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30%;
+}
+
+/* End second Section */
+/* SectionServices */
+.services {
+  width: 100%;
+}
+
+.services-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-text {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #00ff00;
+  color: #ffffff;
+}
+
+.services-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.services-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .services-text,
+  .services-image {
+    width: 50%;
+  }
+
+  .services-wrapper:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+/* End section Services */
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  padding-bottom: 20px;
+  background-color: #000000;
+  color: white;
+example
+
+/* End footer */
