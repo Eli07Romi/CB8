@@ -1,0 +1,30 @@
+.head-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.head-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+  border-radius: 12px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0, 25);
+}
+
+p {
+  text-align: left;
+}
+
+h4 {
+  text-align: center;
+}
+.cont-wrap {
+  height: 160px;
+  object-fit: cover;
+  obje
+}
