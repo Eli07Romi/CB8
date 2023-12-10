@@ -1,0 +1,129 @@
+/* FONT */
+/* 006699
+0099cc
+66CCFF
+99CCCC */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  color: #330066;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+button {
+  border-radius: 20px;
+  border-color: white;
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: rgb(250, 250, 250);
+}
+
+button:hover {
+  background-color: #330066;
+  color: white;
+}
+
+.btnCompleted {
+  margin-bottom: 20px;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  gap: space-between;
+  margin: 20px;
+}
+
+.todo-item h3 {
+  font-size: small;
+  position: center;
+  word-wrap: break-word;
+}
+
+.priority-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.status {
+  background-color: #ffffff;
+  border: 1px solid white(255, 255, 255);
+  border-radius: 20px;
+  color: #330066;
+  font-size: 20px;
+}
+
+.priority-container h2 {
+  margin-bottom: 5px;
+}
+
+.priority-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.priority-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.priority-container li {
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  padding: 10px;
+  flex: 10;
+  text-align: center;
+  width: 250px;
+  min-width: none;
+  margin-top: 30px;
+}
+
+.low-priority-container li {
+  background-color: #663399;
+  color: white;
+}
+
+.important-priority-container li {
+  background-color: #9933cc;
+  color: white;
+}
+
+.high-priority-container li {
+  background-color: #cc99ff;
+  color: white;
+}
+.title-div {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
