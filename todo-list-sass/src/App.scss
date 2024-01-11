@@ -1,0 +1,19 @@
+@import "./assets/css/variables.scss";
+@import "./assets/css/mixins.scss";
+
+body {
+  background-color: $background-color;
+  font-size: $font-size;
+
+  .App {
+    @include flex-container(row, inherit, inherit, 20px);
+    flex-direction: column;
+    padding: 24px 0;
+    width: 80vw;
+    overflow-y: scroll; // non sono riuscita a inserire le media query, in questo modo però mi fa uno scroll da mobile e in website non cambia nulla
+  }
+
+  h1 {
+    color: $primary-color;
+  }
+}
