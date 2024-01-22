@@ -1,0 +1,40 @@
+.Book {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  width: 250px;
+  height: 200px;
+  padding: 12px;
+  background-color: rgba(142, 238, 245, 0.324);
+  border-radius: 14px;
+  font-size: 0.8rem;
+  transition: background 0.35s;
+  cursor: pointer;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: rgb(42, 75, 136);
+  }
+
+  .image {
+    width: 100px;
+    height: 100px;
+    border-radius: 14px;
+    transform: translate(-0px, -30px);
+  }
+
+  .title {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .author {
+    font-size: 0.6rem;
+    margin: 4px 0;
+    text-transform: uppercase;
+  }
+}
