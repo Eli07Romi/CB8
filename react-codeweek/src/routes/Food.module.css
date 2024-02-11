@@ -1,0 +1,63 @@
+.wrapper {
+  margin: 4rem 0rem;
+  border-radius: 2rem;
+}
+
+.card {
+  min-height: 25rem;
+  border-radius: 3rem;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+}
+
+.card p {
+  display: block;
+  max-width: fit-content;
+}
+
+.card img {
+  border-radius: 2rem;
+  width: 90%;
+}
+
+.overlay {
+  border-radius: 2rem;
+  position: absolute;
+  z-index: 10;
+  left: 45%;
+  bottom: 0%;
+  transform: translate(-50%, 0%);
+  color: white;
+  max-width: fit-content;
+  text-align: center;
+  font-weight: 800%;
+  font-size: 1.5rem;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Effetto di sfocatura sotto il testo */
+}
+
+.overlay:hover {
+  font-size: 2.5rem; /* Cambia la dimensione del testo al passaggio del mouse */
+}
+
+@media only screen and (max-width: 768px) {
+  .overlay {
+    bottom: 25%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45%;
+  }
+
+  .card {
+    padding: 0px;
+  }
+  .card img {
+    border-radius: 2.5rem;
+    width: 100%;
+  }
+}

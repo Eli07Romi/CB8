@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: auto;
+}
+
+.formStyle {
+  padding: 20px;
+  margin: auto;
+  height: fit-content;
+}
+
+.input {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input input {
+  flex: 1;
+  outline: none;
+}

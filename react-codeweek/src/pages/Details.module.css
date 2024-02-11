@@ -1,0 +1,24 @@
+.detailWrapper {
+  position: relative;
+}
+
+.imageContainer {
+  position: blocks;
+  padding-top: 20px;
+  margin-left: 30%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: #fff;
+}
+
+.info {
+  margin-top: 150px;
+  padding-top: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .imageContainer {
+    max-height: fit-content;
+    width: fit-content;
+  }
+}
