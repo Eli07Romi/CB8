@@ -79,11 +79,9 @@ app.put("/books/:id", async (req, res) => {
     if (!book) {
       res.status(404).json({ message: "Book not found" });
     } else {
-      // Update book fields
       book.title = req.body.title;
       book.author = req.body.author;
       book.genre = req.body.genre;
-      // Update other fields as needed
 
       await book.save();
       res.status(201).json({ message: "Book updated successfully" });
